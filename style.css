@@ -1,0 +1,23 @@
+/* body{ background-image: linear-gradient(white, grey);} */
+.tophead {
+    padding-top: 20px;
+    padding-bottom: 20px ;
+    text-align: center;
+    background-image: linear-gradient(to bottom right,green, pink);
+}
+
+body {
+    font-family: "Helvetica", "Arial", sans-serif;
+    background-image: linear-gradient(to bottom right,lightblue, teal);
+    background-attachment: fixed;
+    line-height: 1.5;
+    padding: 4em 1em;
+    margin: 0 auto;
+    max-width: 70em;
+}
+.section {background-image: linear-gradient(white, grey) ;}
+
+footer {
+    padding-top: 50px;
+    text-align: center;
+}
