@@ -1,23 +1,119 @@
-/* body{ background-image: linear-gradient(white, grey);} */
+/* body{ background-image: linear-gradient(white, grey);}
 .tophead {
-    padding-top: 20px;
-    padding-bottom: 20px ;
+    left:0 ; top:0 ;
+    padding-top: 0;
+    padding-bottom: 0 ;
     text-align: center;
-    background-image: linear-gradient(to bottom right,green, pink);
 }
+*/
+/*
+header {
+    background-image: url(pics\resize_bagan.jpg;);
+}
+*/
 
 body {
     font-family: "Helvetica", "Arial", sans-serif;
-    background-image: linear-gradient(to bottom right,lightblue, teal);
+    background-image: linear-gradient(to bottom right, teal, green);
     background-attachment: fixed;
-    line-height: 1.5;
-    padding: 4em 1em;
-    margin: 0 auto;
-    max-width: 70em;
 }
-.section {background-image: linear-gradient(white, grey) ;}
+.navbar {
+    text-align: center;
+}
+.welcome{
+    text-align: center;
+}
+
+.section {
+    background-color: lightgrey;
+    /*box-shadow: 40px 20px 80px #888888; */
+    -webkit-box-shadow: 0 0 10px #ffa;
+}
+
+
+
+#side_section {
+    float: left;
+    width: 60%;
+}
+
+#side_picture {
+    float: right;
+    max-width: 50px
+    padding-right: 5em;
+    padding-left: 5em;
+}
+
+.racpic {
+    width: 100%;
+}
+
+#cowpic {
+    max-width: 100px
+}
+
+.moo {
+    width: 100%;
+}
+
+.myname {
+    text-align: left;
+    text-shadow: 1px 4px 8px grey;
+    top: 0px;
+    position: absolute;
+    font-family: cursive;
+}
+.button {
+  padding: 5px 5px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.toppic {
+    text-align: center;
+    padding-top: 20px;
+}
+.sidepic {
+    max-width: 100px
+}
+/* this doesn't work
+#toppic.resize {width = 10%; height=auto;}
+*/
+
+
+main {
+    padding: 4em 4em 4em 4em;
+    margin: 0 auto;
+    max-width: 50em;
+}
+.container {
+    padding: 1em 2em 1em 2em;
+    text-align: justify;
+}
+
+.side_container {
+    padding: 1em 2em 1em 2em;
+    text-align: justify;
+    float: left;
+}
 
 footer {
+    clear: both;
     padding-top: 50px;
     text-align: center;
 }
