@@ -14,7 +14,7 @@ header {
 
 body {
     font-family: "Helvetica", "Arial", sans-serif;
-    background-image: linear-gradient(to bottom right, teal, green);
+    background-image: linear-gradient(to bottom right, lightblue, lightgreen);
     background-attachment: fixed;
 }
 .navbar {
@@ -25,7 +25,7 @@ body {
 }
 
 .section {
-    background-color: lightgrey;
+    background-color: #F3F2F2;
     /*box-shadow: 40px 20px 80px #888888; */
     -webkit-box-shadow: 0 0 10px #ffa;
 }
