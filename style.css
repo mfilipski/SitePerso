@@ -100,13 +100,28 @@ body {
   text-align: center;
   cursor: pointer;
   outline: none;
-  color: darkgrey;
+  color: #132876;
   background-color: transparent;
   border: none;
   border-radius: 5px;
   box-shadow: 1px 3px #999;
 }
-.button2:hover {
+
+.button3 {
+  padding: 5px 20px;
+  font-size: 18px;
+  font-family:  'Raleway', sans-serif ; 
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #132876;
+  background-color: lightgray;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 3px #999;
+}
+
+.button2:hover  {
 	background-color: #4CAF50 ;
 	text-decoration: underline  ;
 	}
