@@ -44,6 +44,15 @@ body {
     padding-left: 5em;
 }
 
+#bookpicbox {
+	height: 10% ; 
+	width:auto;
+}
+.bookpic {
+	height: 200px ; 
+	width: auto;
+}
+
 .racpic {
     width: 100%;
 }
@@ -80,6 +89,29 @@ body {
 
 .button:active {
   background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button2 {
+  padding: 5px 20px;
+  font-size: 18px;
+  font-family:  'Raleway', sans-serif ; 
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: darkgrey;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 3px #999;
+}
+.button2:hover {
+	background-color: #4CAF50 ;
+	text-decoration: underline  ;
+	}
+.button2:active {
+  background-color: teal;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
