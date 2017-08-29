@@ -5,37 +5,48 @@
     <meta charset="utf-8">
     <title>Mateusz's home page</title>
     <meta name="description" content="Webite for random work stuff">
-    <link rel="stylesheet" type="text/css" href="style.css">
+<!--    <link rel="stylesheet" type="text/css" href="style.css">  -->
     <script src="https://use.fontawesome.com/49737a4939.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css"/>
+    <style>
+        body {
+            /*  background-color: #ffffaa; */
+            background-image: linear-gradient(to bottom right, lightblue, lightgreen)
+        }
+    </style>
 </head>
 
 
 <body>
-    <header class="tophead">
-<!-- <p><img src="raccoon.jpg" alt="Raccoon Logo"></p> -->
-        <nav class="navbar">
-            <a href="index.html"><button class="button2">HOME</button></a>
-			<a href="research.html"><button class="button3">Research</button></a>
-			<a href="pubs.html"><button class="button2">Publications</button></a>
-			<a href="cv.html"><button class="button2">CV</button></a>
-			<a href="econcircles.html"><button class="button2">Econ Circles</button></a>
-			<a href="stata.html"><button class="button2">Stata code</button></a>
+    <header>
+        <nav class="cyan darken-4">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Mateusz Filipski</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="active"><a href="research.html">Research</a></li>
+                    <li><a href="pubs.html">Publications</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="econcircles.html">Econ Circles</a></li>
+                    <li><a href="stata.html">Stata code</a></li>
+                </ul>
+            </div>
         </nav>
-        <hr />
     </header>
-	
+
     <main>
-        <section class="section" id="central_section">
+        <section class="container">
 			<p>My research focuses on development, poverty alleviation, and impact evaluation of programs and policies. </p>
 			<br/>
 			<br/>
-			<p>This is a <a href="http://www.beyondexperiments.org" target="_blank">Book</a> I co-wrote.</p> 		
-			<div class="bookpicbox"> 
+			<p>This is a <a href="http://www.beyondexperiments.org" target="_blank">Book</a> I co-wrote.</p>
+			<div class="bookpicbox">
 				<a href="http://www.beyondexperiments.org" target="_blank"><img class="bookpic" src="pics\bookCover.jpg" alt="book_cover_pic.jpg"></a>
 			</div>
         </section>
     </main>
-	
+
 	<footer>
     <p> This website was edited with
         <a href="https://atom.io/" target="_blank">atom</a>
@@ -43,5 +54,7 @@
         <a href="https://github.com/" target="_blank"><i class="fa fa-github fa-3x"></i><a>
     </p>
 	</footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
 </body>
 </html>

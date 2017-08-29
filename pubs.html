@@ -5,77 +5,135 @@
     <meta charset="utf-8">
     <title>Mateusz's home page</title>
     <meta name="description" content="Webite for random work stuff">
-    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://use.fontawesome.com/49737a4939.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css"/>
+    <style>
+        body {
+            /*  background-color: #ffffaa; */
+            background-image: linear-gradient(to bottom right, lightblue, lightgreen)
+        }
+    </style>
 </head>
 
 <body>
-    <header class="tophead">
-<!-- <p><img src="raccoon.jpg" alt="Raccoon Logo"></p> -->
-        <nav class="navbar">
-            <a href="index.html"><button class="button2">HOME</button></a>
-			<a href="research.html"><button class="button2">Research</button></a>
-			<a href="pubs.html"><button class="button3">Publications</button></a>
-			<a href="cv.html"><button class="button2">CV</button></a>
-			<a href="econcircles.html"><button class="button2">Econ Circles</button></a>
-			<a href="stata.html"><button class="button2">Stata code</button></a>
+    <header>
+        <nav class = "cyan darken-4">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Logo</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li class="active"><a href="pubs.html">Publications</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="econcircles.html">Econ Circles</a></li>
+                    <li><a href="stata.html">Stata code</a></li>
+                </ul>
+            </div>
         </nav>
-        <hr />
     </header>
     <main>
-        <section class="section" id="central_section">
+        <section>
             <div class="container">
-                <h1>Publications</h1>
-            </br></br>
-                <div class="journal_articles">
-                    <p align="center"><strong><u>Journal articles:</u></strong></p>
-                    <p><br /><strong>Filipski, M</strong>, Aboudrare, A., Lybbert, T. &amp; Taylor, J.E. (2016). Spice Price Spikes: Simulating Gendered Impacts of a Saffron Boom and Bust in Rural Morocco. <em>World Development</em> (<em>forthcoming 2016</em>).</p>
-                    <p>Taylor, J. E., <strong>Filipski, M.</strong>, Alloush, M., Gupta, A., Rojas Valdes, R. I., &amp; Gonzalez-Estrada, E. (2016). Economic impact of refugees. <em>Proceedings of the National Academy of Sciences</em>, 113(27): 7449-7453.</p>
-                    <p><strong>Filipski, M.</strong>, Y. Zhang, and K. Chen. (2015). &ldquo;Making Health Insurance pro-Poor: Evidence from a Household Panel in Rural China.&rdquo; <em>BMC Health Services Research</em>, 15(1): 210.</p>
-                    <p>Stevens, A. H., Miller, D. L., Page, M. E., &amp; <strong>Filipski, M.</strong> (2015). The best of times, the worst of times: Understanding pro-cyclical mortality. <em>American Economic Journal: Economic Policy</em>, 7(4): 1-34.</p>
-                    <p><strong>Filipski, M</strong>, Thome, K., Taylor, J.E, and Davis, B. (2015). Effects of Treatment Beyond the Treated: A General Equilibrium Impact Evaluation of Lesotho&rsquo;s Cash Grants Program.&nbsp;<em>Agricultural Economics </em>46(3015)227-243.</p>
-                    <p>Jonasson, E.,<strong> Filipski, M.</strong>, Brooks, J., &amp; Taylor, J. E. (2013). Modeling the welfare impacts of agricultural policies in developing countries. <em>Journal of Policy Modeling, In Press, Corrected Proof, Available online 25 October 2013.</em></p>
-                    <p>Thome, K., <strong>Filipski</strong><strong>, M.,</strong> Kagin, J., Taylor, J.E &amp; Davis, B. (2013). Agricultural Spillover Effects of Cash Transfers: What Does LEWIE Have to Say? <em>American Journal of Agricultural Economics,</em> 95 (5): 1338-1344 <em>(Proceedings issue)</em></p>
-                    <p><strong>Filipski, M.,</strong> &amp; Taylor, J. E. (2012). A simulation impact evaluation of rural income transfers in Malawi and Ghana. <em>Journal of Development Effectiveness</em>, <em>4</em>(1), 1&ndash;21. </p>
-                    <p><strong>Filipski, M</strong>., Taylor, J. E., and Msangi, S., (2011). Effects of Free Trade on Women and Immigrants: CAFTA and the Rural Dominican Republic. <em>World Development</em>, <em>39</em>(10), 1862&ndash;1877. </p>
-                    <p>Miller, D. L., Page, M. E., Stevens, A. H., &amp; <strong>Filipski, M.</strong> (2009). Why are recessions good for your health? <em>American Economic Review</em>, <em>99</em>(2), 122&ndash;127 <em>(Proceedings issue)</em></p>
-                    <p><strong>Filipski, M., </strong>J-Ph. Colin and C. Seignobos (2007) Emergence and evolution of property rights to land in the context of land abundance. The case of the Yambassa region (Cameroon)<strong>.</strong> <em>Cahiers d'&eacute;tudes et de recherches francophones / Agricultures,</em>16(5): 387-93 <em>(in French)</em></p>
+                <h2>Some of my Publications</h2>
+            </div>
+            <br/>
+            <div class= "container  grey lighten-2">
+                <br />
+                <blockquote><h5><u>Journal articles:</u></h5></blockquote>
+                <div class="row">
+                    <div class="col s1">
+                    </div>
+                    <div class="col s10">
+                        <div id="journal_articles">
+                            <p><br /><strong>Filipski, M</strong>, Aboudrare, A., Lybbert, T. &amp; Taylor, J.E. (2016). Spice Price Spikes: Simulating Gendered Impacts of a Saffron Boom and Bust in Rural Morocco. <em>World Development</em> (<em>forthcoming 2016</em>).</p>
+                            <p>Taylor, J. E., <strong>Filipski, M.</strong>, Alloush, M., Gupta, A., Rojas Valdes, R. I., &amp; Gonzalez-Estrada, E. (2016). Economic impact of refugees. <em>Proceedings of the National Academy of Sciences</em>, 113(27): 7449-7453.</p>
+                            <p><strong>Filipski, M.</strong>, Y. Zhang, and K. Chen. (2015). &ldquo;Making Health Insurance pro-Poor: Evidence from a Household Panel in Rural China.&rdquo; <em>BMC Health Services Research</em>, 15(1): 210.</p>
+                            <p>Stevens, A. H., Miller, D. L., Page, M. E., &amp; <strong>Filipski, M.</strong> (2015). The best of times, the worst of times: Understanding pro-cyclical mortality. <em>American Economic Journal: Economic Policy</em>, 7(4): 1-34.</p>
+                            <p><strong>Filipski, M</strong>, Thome, K., Taylor, J.E, and Davis, B. (2015). Effects of Treatment Beyond the Treated: A General Equilibrium Impact Evaluation of Lesotho&rsquo;s Cash Grants Program.&nbsp;<em>Agricultural Economics </em>46(3015)227-243.</p>
+                            <p>Jonasson, E.,<strong> Filipski, M.</strong>, Brooks, J., &amp; Taylor, J. E. (2013). Modeling the welfare impacts of agricultural policies in developing countries. <em>Journal of Policy Modeling, In Press, Corrected Proof, Available online 25 October 2013.</em></p>
+                            <p>Thome, K., <strong>Filipski</strong><strong>, M.,</strong> Kagin, J., Taylor, J.E &amp; Davis, B. (2013). Agricultural Spillover Effects of Cash Transfers: What Does LEWIE Have to Say? <em>American Journal of Agricultural Economics,</em> 95 (5): 1338-1344 <em>(Proceedings issue)</em></p>
+                            <p><strong>Filipski, M.,</strong> &amp; Taylor, J. E. (2012). A simulation impact evaluation of rural income transfers in Malawi and Ghana. <em>Journal of Development Effectiveness</em>, <em>4</em>(1), 1&ndash;21. </p>
+                            <p><strong>Filipski, M</strong>., Taylor, J. E., and Msangi, S., (2011). Effects of Free Trade on Women and Immigrants: CAFTA and the Rural Dominican Republic. <em>World Development</em>, <em>39</em>(10), 1862&ndash;1877. </p>
+                            <p>Miller, D. L., Page, M. E., Stevens, A. H., &amp; <strong>Filipski, M.</strong> (2009). Why are recessions good for your health? <em>American Economic Review</em>, <em>99</em>(2), 122&ndash;127 <em>(Proceedings issue)</em></p>
+                            <p><strong>Filipski, M., </strong>J-Ph. Colin and C. Seignobos (2007) Emergence and evolution of property rights to land in the context of land abundance. The case of the Yambassa region (Cameroon)<strong>.</strong> <em>Cahiers d'&eacute;tudes et de recherches francophones / Agricultures,</em>16(5): 387-93 <em>(in French)</em></p>
+                        </div>
+                    </div>
+                    <div class="col s1">
+                    </div>
                 </div>
-                <br /><br />
-                <div class = "books">
-                    <p align="center"><strong><u>Books:</u></strong></p>
-                    <p>Taylor, J.E. and <strong>Filipski, M.</strong> (2014) <em>Beyond Experiments in Development Economics: Local Economy-wide Impact Evaluation</em>. Forthcoming 2014. Oxford University Press. </p>
+                <br />
+                <blockquote><h5><u>Books:</u></h5></blockquote>
+                <div class="row">
+                    <div class="col s1">
+                    </div>
+                    <div class="col s10">
+                        <div id = "books">
+                            <p>Taylor, J.E. and <strong>Filipski, M.</strong> (2014) <em>Beyond Experiments in Development Economics: Local Economy-wide Impact Evaluation</em>. Forthcoming 2014. Oxford University Press. </p>
+                        </div>
+                    </div>
+                    <div class="col s1">
+                    </div>
                 </div>
-                <br /><br />
-                <div class="book_chapters">
-                    <p align="center"><strong><u>Book Chapters:</u></strong></p>
-                    <p><strong>Filipski, M. </strong>and Covarrubias, K. (2012) Chapter 2: Distributional Impacts of Commodity Prices in Developing Countries, In Jonathan Brooks (Ed.) <em>Agricultural Policies for Poverty Reduction</em>. OECD publishing 2012. pp.61-88.</p>
-                    <p>Brooks, J., <strong>Filipski, M.,</strong> Jonasson, E. And Taylor, J.E., (2012) <strong>Chapter 3. </strong>The Distributional Implications of Agricultural Policies in Developing Countries: Findings from the Development Policy Evaluation Model (DEVPEM), In Jonathan Brooks (Ed.)<em>Agricultural Policies for Poverty Reduction</em>. OECD publishing 2012. pp.91-108.</p>
+                <br />
+                <blockquote><h5><u>Book Chapters:</u></h5></blockquote>
+                <div class="row">
+                    <div class="col s1">
+                    </div>
+                    <div class="col s10">
+                        <div id="book_chapters">
+                            <p><strong>Filipski, M. </strong>and Covarrubias, K. (2012) Chapter 2: Distributional Impacts of Commodity Prices in Developing Countries, In Jonathan Brooks (Ed.) <em>Agricultural Policies for Poverty Reduction</em>. OECD publishing 2012. pp.61-88.</p>
+                            <p>Brooks, J., <strong>Filipski, M.,</strong> Jonasson, E. And Taylor, J.E., (2012) <strong>Chapter 3. </strong>The Distributional Implications of Agricultural Policies in Developing Countries: Findings from the Development Policy Evaluation Model (DEVPEM), In Jonathan Brooks (Ed.)<em>Agricultural Policies for Poverty Reduction</em>. OECD publishing 2012. pp.91-108.</p>
+                        </div>
+                    </div>
+                    <div class="col s1">
+                    </div>
                 </div>
-                <br /><br />
-                <div class="working_papers">
-                    <p align="center"><strong><u>Working Papers (Available Online)</u></strong><u>:</u></p>
-                    <p>Stevens, A. H., Miller, D. L., Page, M. E., &amp; <strong>Filipski, M</strong>. (2011). <em>The best of times, the worst of times: Understanding pro-cyclical mortality</em>. <em>NBER</em> (Vol. 288, p. 627). National Bureau of Economic Research.</p>
-                    <p><strong>Filipski, M.</strong>, Manning, D., Taylor, J. E., Diao, X., &amp; Pradesha, A. (2013). Evaluating the Local Economywide Impacts of Irrigation Projects: Feed the future in Tanzania. IFPRI publications.</p>
+                <br />
+                <blockquote><h5><u>Working Papers:</u></h5></blockquote>
+                <div class="row">
+                    <div class="col s1">
+                    </div>
+                    <div class="col s10">
+                        <div id="working_papers">
+                            <p align="center"><strong><u>Working Papers (Available Online)</u></strong><u>:</u></p>
+                            <p>Stevens, A. H., Miller, D. L., Page, M. E., &amp; <strong>Filipski, M</strong>. (2011). <em>The best of times, the worst of times: Understanding pro-cyclical mortality</em>. <em>NBER</em> (Vol. 288, p. 627). National Bureau of Economic Research.</p>
+                            <p><strong>Filipski, M.</strong>, Manning, D., Taylor, J. E., Diao, X., &amp; Pradesha, A. (2013). Evaluating the Local Economywide Impacts of Irrigation Projects: Feed the future in Tanzania. IFPRI publications.</p>
+                        </div>
+                    </div>
+                    <div class="col s1">
+                    </div>
                 </div>
-                <div class="in_progress">
-                    <p align="center"><strong><u>In Progress</u></strong><u>:</u></p>
-                    <p><strong>Filipski, M</strong>, Taylor, J.E. and Lybbert, T., Saffron Production, Seasonality and Gender: A LEWIE Model to Simulate the Local Development Impacts of Saffron Price Shocks<em>. (Preparing for submission</em>)</p>
-                    <p><strong>&nbsp;</strong></p>
-                    <p><strong>Filipski, M.</strong>, Zhang, Y. and Chen, K. (2013). Is Health Insurance Pro-Poor? Evidence From Four Waves of Household Surveys in Guizhou.&nbsp; <em>Presented at CAER-IFPRI conference</em>, Wuhan, China, Oct 17-18, 2013</p>
-                    <p>Zhang, Y., <strong>Filipski, M.</strong> and Chen, K. (2013)<a name="OLE_LINK6"></a><a name="OLE_LINK5"></a> Can Preferential Policies Help the Rural Poor Move Up? Evidence From a Household Panel in Rural Guizhou Province.&nbsp; <em>Presented at CAER-IFPRI conference</em>, Wuhan, China, Oct 17-18, 2013.</p>
-                    <p><strong>Filipski, M</strong>, Diao, X., Taylor, J.E. and Seyoum-Taffesse, A. (2013) Evaluating the General Equilibrium Impacts of Ethiopia&rsquo;s Productive Safety Net Program. Expected output from 3ie-funded project. </p>
-                    <p>Taylor, J.E., Davis, B, and <strong>Filipski, M.</strong>&nbsp; Are we underestimating the impacts of cash transfers? Lessons from Modeling three African RCT's.&nbsp; Expected output from Protection-to-Production (PtoP) initiative, FAO and DFID.&nbsp;</p>
+                <br />
+                <blockquote><h5><u>Other work in progress:</u></h5></blockquote>
+                <div class="row">
+                    <div class="col s1">
+                    </div>
+                    <div class="col s10">
+                        <div id="in_progress">
+                            <p align="center"><strong><u>In Progress</u></strong><u>:</u></p>
+                            <p><strong>Filipski, M</strong>, Taylor, J.E. and Lybbert, T., Saffron Production, Seasonality and Gender: A LEWIE Model to Simulate the Local Development Impacts of Saffron Price Shocks<em>. (Preparing for submission</em>)</p>
+                            <p><strong>&nbsp;</strong></p>
+                            <p><strong>Filipski, M.</strong>, Zhang, Y. and Chen, K. (2013). Is Health Insurance Pro-Poor? Evidence From Four Waves of Household Surveys in Guizhou.&nbsp; <em>Presented at CAER-IFPRI conference</em>, Wuhan, China, Oct 17-18, 2013</p>
+                            <p>Zhang, Y., <strong>Filipski, M.</strong> and Chen, K. (2013)<a name="OLE_LINK6"></a><a name="OLE_LINK5"></a> Can Preferential Policies Help the Rural Poor Move Up? Evidence From a Household Panel in Rural Guizhou Province.&nbsp; <em>Presented at CAER-IFPRI conference</em>, Wuhan, China, Oct 17-18, 2013.</p>
+                            <p><strong>Filipski, M</strong>, Diao, X., Taylor, J.E. and Seyoum-Taffesse, A. (2013) Evaluating the General Equilibrium Impacts of Ethiopia&rsquo;s Productive Safety Net Program. Expected output from 3ie-funded project. </p>
+                            <p>Taylor, J.E., Davis, B, and <strong>Filipski, M.</strong>&nbsp; Are we underestimating the impacts of cash transfers? Lessons from Modeling three African RCT's.&nbsp; Expected output from Protection-to-Production (PtoP) initiative, FAO and DFID.&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="col s1">
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 	<footer>
-    <p> This website was edited with
-        <a href="https://atom.io/" target="_blank">atom</a>
-        and is hosted on github
-        <a href="https://github.com/" target="_blank"><i class="fa fa-github fa-3x"></i><a>
-    </p>
+        <div class="container center">
+            <p> This website was edited with
+                <a href="https://atom.io/" target="_blank">atom</a>
+                and is hosted on github
+                <a href="https://github.com/" target="_blank"><i class="fa fa-github fa-2x"></i><a>
+            </p>
+        </div>
 	</footer>
 </body>
 </html>
