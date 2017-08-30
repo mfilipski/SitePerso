@@ -96,7 +96,6 @@ body {
 .button2 {
   padding: 5px 20px;
   font-size: 18px;
-  font-family:  'Raleway', sans-serif ; 
   text-align: center;
   cursor: pointer;
   outline: none;
@@ -110,7 +109,6 @@ body {
 .button3 {
   padding: 5px 20px;
   font-size: 18px;
-  font-family:  'Raleway', sans-serif ; 
   text-align: center;
   cursor: pointer;
   outline: none;
