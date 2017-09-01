@@ -15,7 +15,6 @@
      body {
             /*  background-color: #ffffaa; */
             background-image: linear-gradient(to bottom right, lightblue, lightgreen)
-            background-color: #ffffaa;
         }
 	 #timeline {
 	  position: relative;
@@ -23,9 +22,10 @@
 	  text-align: center;
 	 }
 	 #diagram {
+      position: relative;
 	  margin: 0 auto;
 	  max-width: 800px;
-	  text-align: center;
+	  text-align:left;
 	 }
 	 @media all and (max-width: 600px) {
 	  .year label {
@@ -55,38 +55,53 @@
 
 <body>
     <header>
-        <nav class="cyan darken-4">
-            <div class="nav-wrapper">
-                <a href="#" class="brand-logo">Mateusz Filipski</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="research.html">Research</a></li>
-                    <li><a href="pubs.html">Publications</a></li>
-                    <li><a href="cv.html">CV</a></li>
-                    <li class="active"><a href="econcircles.html">Econ Circles</a></li>
-                    <li><a href="stata.html">Stata code</a></li>
-                </ul>
-            </div>
-        </nav>
+		<nav class = "cyan darken-4" >
+			<div class = "container">
+				<div class="nav-wrapper">
+					<a href="#" class="brand-logo">Mateusz Filipski</a>
+					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="research.html">Research</a></li>
+						<li><a href="pubs.html">Publications</a></li>
+						<li><a href="cv.html">CV</a></li>
+						<li class="active"><a href="econcircles.html">Econ Circles</a></li>
+						<li><a href="stata.html">Stata code</a></li>
+					</ul>
+					<ul class="side-nav" id="mobile-demo">
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="research.html">Research</a></li>
+						<li><a href="pubs.html">Publications</a></li>
+						<li><a href="cv.html">CV</a></li>
+						<li><a href="econcircles.html">Econ Circles</a></li>
+						<li><a href="stata.html">Stata code</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
     </header>
     <main>
-        <section class="container">
+        <br/><br/>
+        <div class="container white z-depth-4">
 			Part of my job is to make cool animated graphs like this one.
 			For the initiated, that's a graphical representation of a Social Accounting Matrix.
 			<p>(under construction)</p>
-        </section>
+        </div>
     </main>
-	<nav>
+	<div>
 		<div id="timeline"></div>
-	</nav>
-	<div id="diagram"></div>
-	<footer>
-    <p> This website was edited with
-        <a href="https://atom.io/" target="_blank">atom</a>
-        and is hosted on github
-        <a href="https://github.com/" target="_blank"><i class="fa fa-github fa-3x"></i><a>
-    </p>
-	</footer>
+	</div>
+	<div class="container center pink" id="diagram"></div>
+    <footer>
+        <br/> <br/> <br/>
+        <div class="container center">
+            <p> This website was edited with
+                <a href="https://atom.io/" target="_blank">atom</a>
+                and is hosted on github
+                <a href="https://github.com/" target="_blank"><i class="fa fa-github fa-2x"></i><a>
+            </p>
+        </div>
+    </footer>
 	 <script>
  var data =
 {"names":["CA" ,"rice" ,"whea" ,"maiz" ,"ogrn" ,"bean" ,"foil" ,"cott" ,"suga" ,"vegt" ,"frut" ,"ocrp" ,"pork" ,"beef" ,"mult" ,"poul" ,"oliv" ,"fore" ,"fopr" ,"fish" ,"agsr" ,"coal" ,"petr" ,"mine" ,"onim" ,"food" ,"text" ,"clth" ,"wood" ,"pape" ,"oilp" ,"chem" ,"nmtl" ,"mtal" ,"mtlp" ,"gmch" ,"tmch" ,"ecmc" ,"elmc" ,"ofmc" ,"omfc" ,"wast" ,"heat" ,"gass" ,"wats" ,"cnst" ,"trns" ,"post" ,"info" ,"trde" ,"hotl" ,"fina" ,"rest" ,"cerm" ,"scie" ,"tech" ,"envi" ,"oser" ,"educ" ,"heal" ,"cult" ,"pser" ,"LAB" ,"flabusk" ,"flabsk" ,"CAP" ,"fcap" ,"flnd" ,"INST" ,"FIRMS" ,"hrur" ,"hurb" ,"GnT" ,"gov" ,"dtax" ,"TARIF" ,"OUT" ,"SAVINV" ,"row"],
@@ -207,5 +222,6 @@
 	</script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <script src="js/buttoncollapse.js"></script>
 </body>
 </html>

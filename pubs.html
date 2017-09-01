@@ -18,19 +18,30 @@
 
 <body>
     <header>
-        <nav class = "cyan darken-4">
-            <div class="nav-wrapper">
-                <a href="#" class="brand-logo">Logo</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="research.html">Research</a></li>
-                    <li class="active"><a href="pubs.html">Publications</a></li>
-                    <li><a href="cv.html">CV</a></li>
-                    <li><a href="econcircles.html">Econ Circles</a></li>
-                    <li><a href="stata.html">Stata code</a></li>
-                </ul>
-            </div>
-        </nav>
+		<nav class = "cyan darken-4" >
+			<div class = "container">
+				<div class="nav-wrapper">
+					<a href="#" class="brand-logo">Mateusz Filipski</a>
+					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="research.html">Research</a></li>
+						<li class="active"><a href="pubs.html">Publications</a></li>
+						<li><a href="cv.html">CV</a></li>
+						<li><a href="econcircles.html">Econ Circles</a></li>
+						<li><a href="stata.html">Stata code</a></li>
+					</ul>
+					<ul class="side-nav" id="mobile-demo">
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="research.html">Research</a></li>
+						<li><a href="pubs.html">Publications</a></li>
+						<li><a href="cv.html">CV</a></li>
+						<li><a href="econcircles.html">Econ Circles</a></li>
+						<li><a href="stata.html">Stata code</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
     </header>
     <main>
         <section>
@@ -38,7 +49,7 @@
                 <h2>Some of my Publications</h2>
             </div>
             <br/>
-            <div class= "container  grey lighten-2">
+            <div class= "container  white lighten-2 z-depth-4">
                 <br />
                 <blockquote><h5><u>Journal articles:</u></h5></blockquote>
                 <div class="row">
@@ -96,7 +107,6 @@
                     </div>
                     <div class="col s10">
                         <div id="working_papers">
-                            <p align="center"><strong><u>Working Papers (Available Online)</u></strong><u>:</u></p>
                             <p>Stevens, A. H., Miller, D. L., Page, M. E., &amp; <strong>Filipski, M</strong>. (2011). <em>The best of times, the worst of times: Understanding pro-cyclical mortality</em>. <em>NBER</em> (Vol. 288, p. 627). National Bureau of Economic Research.</p>
                             <p><strong>Filipski, M.</strong>, Manning, D., Taylor, J. E., Diao, X., &amp; Pradesha, A. (2013). Evaluating the Local Economywide Impacts of Irrigation Projects: Feed the future in Tanzania. IFPRI publications.</p>
                         </div>
@@ -111,7 +121,6 @@
                     </div>
                     <div class="col s10">
                         <div id="in_progress">
-                            <p align="center"><strong><u>In Progress</u></strong><u>:</u></p>
                             <p><strong>Filipski, M</strong>, Taylor, J.E. and Lybbert, T., Saffron Production, Seasonality and Gender: A LEWIE Model to Simulate the Local Development Impacts of Saffron Price Shocks<em>. (Preparing for submission</em>)</p>
                             <p><strong>&nbsp;</strong></p>
                             <p><strong>Filipski, M.</strong>, Zhang, Y. and Chen, K. (2013). Is Health Insurance Pro-Poor? Evidence From Four Waves of Household Surveys in Guizhou.&nbsp; <em>Presented at CAER-IFPRI conference</em>, Wuhan, China, Oct 17-18, 2013</p>
@@ -126,7 +135,8 @@
             </div>
         </section>
     </main>
-	<footer>
+    <footer>
+        <br/> <br/> <br/>
         <div class="container center">
             <p> This website was edited with
                 <a href="https://atom.io/" target="_blank">atom</a>
@@ -134,6 +144,9 @@
                 <a href="https://github.com/" target="_blank"><i class="fa fa-github fa-2x"></i><a>
             </p>
         </div>
-	</footer>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <script src="js/buttoncollapse.js"></script>
 </body>
 </html>

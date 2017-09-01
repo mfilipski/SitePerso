@@ -5,35 +5,62 @@
     <meta charset="utf-8">
     <title>Mateusz's home page</title>
     <meta name="description" content="Webite for random work stuff">
-    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://use.fontawesome.com/49737a4939.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css"/>
+    <style>
+        body {
+            /*  background-color: #ffffaa; */
+            background-image: linear-gradient(to bottom right, lightblue, lightgreen);
+        }
+    </style>
 </head>
 
 <body>
-    <header class="tophead">
-<!-- <p><img src="raccoon.jpg" alt="Raccoon Logo"></p> -->
-        <nav class="navbar">
-            <a href="index.html"><button class="button2">HOME</button></a>
-			<a href="research.html"><button class="button2">Research</button></a>
-			<a href="pubs.html"><button class="button2">Publications</button></a>
-			<a href="cv.html"><button class="button2">CV</button></a>
-			<a href="econcircles.html"><button class="button2">Econ Circles</button></a>
-			<a href="stata.html"><button class="button3">Stata code</button></a>
-        </nav>
-        <hr />
+    <header>
+		<nav class = "cyan darken-4" >
+			<div class = "container">
+				<div class="nav-wrapper">
+					<a href="#" class="brand-logo">Mateusz Filipski</a>
+					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="research.html">Research</a></li>
+						<li><a href="pubs.html">Publications</a></li>
+						<li><a href="cv.html">CV</a></li>
+						<li><a href="econcircles.html">Econ Circles</a></li>
+						<li class="active"><a href="stata.html">Stata code</a></li>
+					</ul>
+					<ul class="side-nav" id="mobile-demo">
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="research.html">Research</a></li>
+						<li><a href="pubs.html">Publications</a></li>
+						<li><a href="cv.html">CV</a></li>
+						<li><a href="econcircles.html">Econ Circles</a></li>
+						<li><a href="stata.html">Stata code</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
     </header>
     <main>
-        <section class="section" id="central_section">
-			Another part of my job is to write ado files like this one: 
+        <section class="container">
+			Another part of my job is to write ado files like this one:
 			<p>(under construction)</p>
         </section>
     </main>
-		<footer>
-    <p> This website was edited with
-        <a href="https://atom.io/" target="_blank">atom</a>
-        and is hosted on github
-        <a href="https://github.com/" target="_blank"><i class="fa fa-github fa-3x"></i><a>
-    </p>
-	</footer>
+    <footer>
+        <br/> <br/> <br/>
+        <div class="container center">
+            <p> This website was edited with
+                <a href="https://atom.io/" target="_blank">atom</a>
+                and is hosted on github
+                <a href="https://github.com/" target="_blank"><i class="fa fa-github fa-2x"></i><a>
+            </p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <script src="js/buttoncollapse.js"></script>
 </body>
 </html>

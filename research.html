@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <title>Mateusz's home page</title>
     <meta name="description" content="Webite for random work stuff">
-<!--    <link rel="stylesheet" type="text/css" href="style.css">  -->
     <script src="https://use.fontawesome.com/49737a4939.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css"/>
@@ -20,23 +19,37 @@
 
 <body>
     <header>
-        <nav class="cyan darken-4">
-            <div class="nav-wrapper">
-                <a href="#" class="brand-logo">Mateusz Filipski</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="index.html">HOME</a></li>
-                    <li class="active"><a href="research.html">Research</a></li>
-                    <li><a href="pubs.html">Publications</a></li>
-                    <li><a href="cv.html">CV</a></li>
-                    <li><a href="econcircles.html">Econ Circles</a></li>
-                    <li><a href="stata.html">Stata code</a></li>
-                </ul>
-            </div>
-        </nav>
+		<nav class = "cyan darken-4" >
+			<div class = "container">
+				<div class="nav-wrapper">
+					<a href="#" class="brand-logo">Mateusz Filipski</a>
+					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						<li><a href="index.html">HOME</a></li>
+						<li class="active"><a href="research.html">Research</a></li>
+						<li><a href="pubs.html">Publications</a></li>
+						<li><a href="cv.html">CV</a></li>
+						<li><a href="econcircles.html">Econ Circles</a></li>
+						<li><a href="stata.html">Stata code</a></li>
+					</ul>
+					<ul class="side-nav" id="mobile-demo">
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="research.html">Research</a></li>
+						<li><a href="pubs.html">Publications</a></li>
+						<li><a href="cv.html">CV</a></li>
+						<li><a href="econcircles.html">Econ Circles</a></li>
+						<li><a href="stata.html">Stata code</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
     </header>
 
     <main>
-        <section class="container">
+        <div class="container">
+            <br /><br /><br />
+        </div>
+        <div class="container white z-depth-4">
 			<p>My research focuses on development, poverty alleviation, and impact evaluation of programs and policies. </p>
 			<br/>
 			<br/>
@@ -44,17 +57,21 @@
 			<div class="bookpicbox">
 				<a href="http://www.beyondexperiments.org" target="_blank"><img class="bookpic" src="pics\bookCover.jpg" alt="book_cover_pic.jpg"></a>
 			</div>
-        </section>
+        </div>
     </main>
 
-	<footer>
-    <p> This website was edited with
-        <a href="https://atom.io/" target="_blank">atom</a>
-        and is hosted on github
-        <a href="https://github.com/" target="_blank"><i class="fa fa-github fa-3x"></i><a>
-    </p>
-	</footer>
+    <footer>
+        <br/> <br/> <br/>
+        <div class="container center">
+            <p> This website was edited with
+                <a href="https://atom.io/" target="_blank">atom</a>
+                and is hosted on github
+                <a href="https://github.com/" target="_blank"><i class="fa fa-github fa-2x"></i><a>
+            </p>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <script src="js/buttoncollapse.js"></script>
 </body>
 </html>
