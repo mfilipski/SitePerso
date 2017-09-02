@@ -6,7 +6,6 @@
     <title>Mateusz's home page</title>
     <meta name="description" content="Webite for random work stuff">
 <!--    <link rel="stylesheet" type="text/css" href="style.css">  -->
-    <script src="https://use.fontawesome.com/49737a4939.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css"/>
     <script src="https://use.fontawesome.com/49737a4939.js"></script>
@@ -14,7 +13,7 @@
 	<style>
      body {
             /*  background-color: #ffffaa; */
-            background-image: linear-gradient(to bottom right, lightblue, lightgreen)
+            /* background-image: linear-gradient(to bottom right, lightblue, lightgreen) */
         }
 	 #timeline {
 	  position: relative;
@@ -87,11 +86,11 @@
 			For the initiated, that's a graphical representation of a Social Accounting Matrix.
 			<p>(under construction)</p>
         </div>
+	    <div>
+		    <div id="timeline"></div>
+	    </div>
+	    <div id="diagram"></div>
     </main>
-	<div>
-		<div id="timeline"></div>
-	</div>
-	<div class="container center pink" id="diagram"></div>
     <footer>
         <br/> <br/> <br/>
         <div class="container center">
@@ -201,7 +200,7 @@
   element: '#diagram',
   now: now,
   animationDuration: 500,
-  margin: 125,
+  margin: 100,
   arcPadding: 0.04,
   layout: {
    threshold: 50,
@@ -218,7 +217,7 @@
   chart.draw(now);
  })();
 
-		var _gaq=[['_setAccount','UA-42659946-1'],['_trackPageview']];(function(a,b){var c=a.createElement(b),d=a.getElementsByTagName(b)[0];c.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";d.parentNode.insertBefore(c,d)})(document,"script");
+	var _gaq=[['_setAccount','UA-42659946-1'],['_trackPageview']];(function(a,b){var c=a.createElement(b),d=a.getElementsByTagName(b)[0];c.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";d.parentNode.insertBefore(c,d)})(document,"script");
 	</script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
