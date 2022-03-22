@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- saved from url=(0157)https://cars.assistpub.com/display.html?_otarOg=https%3A%2F%2Fwww.cars.com&_cpub=AAX42WKKE&_csvr=031812_212&_cgdpr=0&_cgdprconsent=1&_cusp_status=0&_ccoppa=0 -->
+<html data-adblockkey="MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAMLlOP3Rke738aeqtDCGp0IgSY5XBv7c+brDMmurbYvOFgakGw6sUG8fwt6VkjnOX9s9Kba1Drg2M9Bye/F3x7MCAwEAAQ==_k5bDL8TM05x3Jg3/IbIAhMG+nHRdu1mtCjSNjVyX9/vcV3iv1BjfGKmHRoHvcaXcRLhdBf9oMU+Bqk0n6Jl9tg=="><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script>
+        function isDisplayIframe(type) {
+            return type;
+        }
+
+        function isPrefetchIframe(type) {
+            return type === "prefetch_frame";
+        }
+
+        function buildDisplayUrl(srcUrl, type) {
+            srcUrl = srcUrl + "&type=" + type;
+            if (isPrefetchIframe(type)) {
+                srcUrl = "";
+            }
+            return srcUrl;
+        }
+
+        function getScriptUrl(srcUrl) {
+            if (window.name !== '') {
+                try {
+                    var iframeParams = JSON.parse(window.name);
+                    if (isDisplayIframe(iframeParams.type)) {
+                        srcUrl = buildDisplayUrl(srcUrl, iframeParams.type);
+                    }
+                } catch (e) {
+                }
+            }
+            return srcUrl;
+        }
+
+        function loadScript(scriptUrl) {
+            if (scriptUrl === "") {
+                return;
+            }
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = scriptUrl;
+            var placeTag = document.getElementsByTagName("script")[0];
+            placeTag.parentNode.insertBefore(script, placeTag);
+        }
+
+        window.aax = window.aax || {};
+        window.aax["__conf"] = {"tarOg":"https://www.cars.com","referer":"https://www.cars.com/"};
+        scriptUrl = getScriptUrl("https://c.aaxads.com/aaxd.js?pub=AAX42WKKE&svr=031812_212&gdpr=0&gdprconsent=1&usp_status=0&coppa=0");
+        loadScript(scriptUrl);
+    </script>
+</head>
+<body marginwidth="0" marginheight="0">
+
+</body></html>

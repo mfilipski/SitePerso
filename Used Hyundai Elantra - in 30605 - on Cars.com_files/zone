@@ -1,0 +1,60 @@
+(function() {
+  var ins_76745486 = document.getElementById('friendly_cache-busting').parentNode;  var iframe_76745486 = document.createElement('iframe');
+  iframe_76745486.setAttribute('id', 'friendly_76745486');
+  iframe_76745486.setAttribute('allowtransparency', 'true');
+  iframe_76745486.setAttribute('scrolling', 'no');
+  iframe_76745486.setAttribute('style', 'margin:0; padding:0; width:728px; height:90px; border:0; overflow:hidden; vertical-align:bottom');
+  iframe_76745486.setAttribute('sandbox', 'allow-forms allow-popups allow-popups-to-escape-sandbox allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation-by-user-activation');
+  ins_76745486.appendChild(iframe_76745486);
+  var iframeDocument_76745486 = (iframe_76745486.contentWindow) ? iframe_76745486.contentWindow.document : (iframe_76745486.contentDocument || iframe_76745486.document);
+  iframeDocument_76745486.open();
+  iframeDocument_76745486.write('<body style="margin:0; padding:0; overflow:hidden"><div style="width:728px; height:90px"><div id=\"friendly_76745486\" data-zid=\"2361\"></div>\r\n\r\n<scr'+'ipt type=\"text/javascript\">\r\n(function() {\r\n  try { window.__cmp = (window.__cmp || window.parent.__cmp); } catch (e) { }\r\n  var wrapperIframe = document.createElement(\"iframe\");\r\n  wrapperIframe.setAttribute(\"id\", \"friendly_76745486_Loader\");\r\n  wrapperIframe.setAttribute(\"allowtransparency\", \"true\");\r\n  wrapperIframe.setAttribute(\"scrolling\", \"no\");\r\n  wrapperIframe.setAttribute(\"style\", \"position: absolute; margin:0; padding:0; width:1px; height:1px; border:0; overflow:hidden; display: none\");\r\n  document.getElementById(\'friendly_76745486\').appendChild(wrapperIframe);\r\n  var wrapperDocument = (wrapperIframe.contentWindow) ? wrapperIframe.contentWindow.document : (wrapperIframe.contentDocument || wrapperIframe.document);\r\n  var wrapperWindow = (wrapperIframe.contentWindow || wrapperIframe.window);\r\n  wrapperDocument.open();\r\n  wrapperDocument.write(\'<scr\'+\'ipt async src=\"https://serving.roimediaconsultants.com/js/prebid-roimedia-4.17.0.js\" type=\"text/javascript\"></scr\'+\'ipt><div id=\"friendly_76745486\"><div id=\"html_76745486\"></div></div>\');\r\n  wrapperDocument.close();\r\n  wrapperWindow.adUnitCode = \'friendly_76745486\';\r\n  wrapperWindow.adUnits = [{\r\n    code: wrapperWindow.adUnitCode,\r\n    mediaTypes: {\r\n      banner: {\r\n        sizes: [[728,90]]\r\n      }\r\n    },\r\n    sizes: [[728,90]],\r\n    bids: [{bidder:\'helloearth\',params:{placementId:\'20837385\'}},{bidder:\'pubmatic\',params:{publisherId:\'158826\',adSlot:\'cars_728x90\'}},{bidder:\'ix\',params:{siteId:\'616606\',size:[728,90]}},{bidder:\'sovrn\',params:{tagid:\'844956\'}},{bidder:\'rubicon\',params:{accountId:\'17544\',siteId:\'359698\',zoneId:\'1937990\'}}]\r\n  }];\r\n  try { wrapperWindow.__cmp = (window.__cmp || window.parent.__cmp); } catch (e) { }\r\n  wrapperWindow.pbjs = wrapperWindow.pbjs || {};\r\n  wrapperWindow.pbjs.que = wrapperWindow.pbjs.que || [];\r\n  wrapperWindow.pbjs.que.push(function() {\r\n    wrapperWindow.pbjs.bidderSettings = {\n\"helloearth\": { bidCpmAdjustment : function(bidCpm, bid) { return (bidCpm * 0.98); } },\"pubmatic\": { bidCpmAdjustment : function(bidCpm, bid) { return (bidCpm * 1); } },\"ix\": { bidCpmAdjustment : function(bidCpm, bid) { return (bidCpm * 0.95); } },\"sovrn\": { bidCpmAdjustment : function(bidCpm, bid) { return (bidCpm * 1); } },\"rubicon\": { bidCpmAdjustment : function(bidCpm, bid) { return (bidCpm * 0.7); } }\n};\nwrapperWindow.pbjs.setConfig({ publisherDomain: \'https://cars.com\', priceGranularity: \'high\', userSync: { syncEnabled: (function() { var allow = true; if (0 > 0) { allow = false; } try { if (sessionStorage) { if (!sessionStorage.getItem(\'PBJS_SYNCED\') || (new Date().getTime() - sessionStorage.getItem(\'PBJS_SYNCED\')) > (10 * 1000)) { sessionStorage.setItem(\'PBJS_SYNCED\', new Date().getTime()); } else { allow = false; } } } catch (e) {} return allow; })(), syncsPerBidder: 1, filterSettings: { iframe: { bidders: \'*\', filter: \'include\' } }, userIds: [{ name: \'pubCommonId\', storage: { type: \'cookie\', name: \'_pubcid\', expires: 365 } }, { name: \'identityLink\', params: { pid: \'13216\' }, storage: { type: \'cookie\', name: \'idl_env\', expires: 30 } }], auctionDelay: 50 } });\r\n    wrapperWindow.pbjs.aliasBidder(\'appnexus\', \'helloearth\');\r\n    wrapperWindow.pbjs.addAdUnits(wrapperWindow.adUnits);\r\n    wrapperWindow.setTimeout(function() { wrapperWindow.initAdserver(); }, 3000);\r\n    wrapperWindow.pbjs.requestBids({\r\n      bidsBackHandler: wrapperWindow.initAdserver\r\n    });\r\n  });\r\n  wrapperWindow.getWinUrl = function(bidResponse) {\r\n    var url = \"https://serving.roimediaconsultants.com/servlet/view/banner/javascript/media?mid=0&cid=2018&pid=12&zid=2361&uuid=a94e5b58b3ab30636f231ecab673bdd0&random=76745486&millis=20210318165626&hb_request={REQUESTID}&hb_bidder={BIDDER}&hb_cpm={CPM}&hb_adid={HBADID}&hb_dealid={DEALID}&hb_size={SIZE}&hb_friendly=friendly_76745486&language=en&resolution=unspecified&txid=76864913&refresh_count=0&rmpid=true&referrer=https%3A%2F%2Fcars.com%2Ffor-sale%2Fsearchresults.action%2F\";\r\n    url = url.replace(\'{REQUESTID}\', \'17503620\');\r\n    url = url.replace(\'{BIDDER}\', bidResponse.bidderCode);\r\n    url = url.replace(\'{CPM}\', bidResponse.cpm);\r\n    url = url.replace(\'{HBADID}\', bidResponse.adId);\r\n    url = url.replace(\'{SIZE}\', bidResponse.size);\r\n    if (\'dealId\' in bidResponse && typeof bidResponse.dealId !== \'undefined\') { url = url.replace(\'{DEALID}\', bidResponse.dealId); }\r\n    return url;\r\n  };\r\n  wrapperWindow.getFailUrl = function(bidCount) {\r\n    var url = \"https://serving.roimediaconsultants.com/servlet/view/banner/javascript/zone?pid=12&zid=2361&fcid=2018&uuid=a94e5b58b3ab30636f231ecab673bdd0&random=76745486&millis=20210318165626&hb_request={REQUESTID}&hb_error={ERRCODE}&friendly=friendly_76745486&language=en&resolution=unspecified&txid=76864913&refresh_count=0&rmpid=true&referrer=https%3A%2F%2Fcars.com%2Ffor-sale%2Fsearchresults.action%2F\";\r\n    url = url.replace(\'{REQUESTID}\', \'17503620\');\r\n    url = url.replace(\'{ERRCODE}\', (bidCount > 0 ? \'decline\' : \'timeout\'));\r\n    return url;\r\n  };\r\n  wrapperWindow.initAdserverCalled = false;\r\n  wrapperWindow.initAdserver = function() {\r\n    if (!wrapperWindow.initAdserverCalled) {\r\n      wrapperWindow.initAdserverCalled = true;\r\n      var bidResponses = wrapperWindow.pbjs.getHighestCpmBids(wrapperWindow.adUnitCode);\r\n      if (bidResponses && bidResponses.length > 0 && (0.01 <= 0.00 || bidResponses[0].cpm >= 0.01)) {\r\n        var bidResponse = bidResponses[0];\r\n        var bidIframe = document.createElement(\"iframe\");\r\n        bidIframe.setAttribute(\"id\", wrapperWindow.adUnitCode + \"_Creative\");\r\n        bidIframe.setAttribute(\"allowtransparency\", \"true\");\r\n        bidIframe.setAttribute(\"scrolling\", \"no\");\r\n        bidIframe.setAttribute(\"style\", \"position: relative; margin:0; padding:0; width:\"+bidResponse.width+\"px; height:\"+bidResponse.height+\"px; border:0; overflow:hidden\");\r\n        bidIframe.setAttribute(\"sandbox\", \"allow-forms allow-popups allow-popups-to-escape-sandbox allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation-by-user-activation\");\r\n        wrapperWindow.parent.document.getElementById(\'friendly_76745486\').appendChild(bidIframe);\r\n        var bidIframeDoc = (bidIframe.contentWindow) ? bidIframe.contentWindow.document : (bidIframe.contentDocument || bidIframe.document);\r\n        bidIframeDoc.open();\r\n        bidIframeDoc.write(\'<scr\'+\'ipt src=\"\'+wrapperWindow.getWinUrl(bidResponse)+\'\" type=\"text/javascript\"></scr\'+\'ipt>\');\r\n        bidIframeDoc.close();\r\n      }\r\n      else {\r\n        var insTag = document.createElement(\'ins\');\r\n        insTag.setAttribute(\"id\", \"friendly_76745486\");\r\n        wrapperWindow.parent.document.getElementById(\'friendly_76745486\').appendChild(insTag);\r\n        var fallbackLoader = document.createElement(\'script\');\r\n        fallbackLoader.type = \'text/javascript\';\r\n        fallbackLoader.async = true;\r\n        fallbackLoader.src = wrapperWindow.getFailUrl((bidResponses && bidResponses.length > 0) ? bidResponses.length : 0);\r\n        var firstScriptTag = wrapperWindow.parent.document.getElementsByTagName(\'script\')[0];\r\n        firstScriptTag.parentNode.insertBefore(fallbackLoader, firstScriptTag);\r\n      }\r\n    }\r\n  };\r\n})();\r\n</scr'+'ipt></div></body>');
+    iframeDocument_76745486.close();
+  document.Refresh_Page = function() {
+    if ('context' in window && 'hidden' in window.context) {
+      return !window.context.hidden;
+    }
+    var getHiddenProp = function() {
+      var prefixes = ['webkit','moz','ms','o'];
+      if ('hidden' in document) return 'hidden';
+      for (var i = 0; i < prefixes.length; i++){
+        if ((prefixes[i] + 'Hidden') in document) { return prefixes[i] + 'Hidden'; }
+      }
+      return null;
+    };
+    var prop = getHiddenProp();
+    return (prop) ? !document[prop] : true;
+  };
+  var Refresh_76745486_Last = new Date().getTime();
+  document.Refresh_Viewable = ('Refresh_Viewable' in document) ? document.Refresh_Viewable : false;
+  (function() {
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function(entries) {
+        for (var i = 0; i < entries.length; i++) {
+          document.Refresh_Viewable = (document.Refresh_Page() && entries[i].intersectionRatio >= 0.5) ? true : false;
+        }
+      }, { threshold: [0.5] });
+      io.observe(iframe_76745486);
+      document.Refresh_IO = io;
+    }
+  })();
+  var Refresh_76745486_Interval = function() {
+    return (document.Refresh_Viewable === true) ? 20000 : 20000;
+  };
+  var Refresh_76745486 = function() {
+    if ((new Date().getTime() - Refresh_76745486_Last) < Refresh_76745486_Interval()) { return; }
+    clearInterval(Refresh_76745486_Timer);
+    Refresh_76745486_Last = new Date().getTime();
+    if ('Refresh_IO' in document) { document.Refresh_IO.unobserve(iframe_76745486); }
+    iframe_76745486.style.display = 'none';
+    var s = document.createElement('script'); s.type = 'text/javascript';
+    s.src = 'https://serving.roimediaconsultants.com/servlet/view/banner/javascript/zone?zid=2361&pid=0&fr=20&txid=76864913&frcn=1&frlm=60&friendly=friendly_76745486&language=en&txid=76864913&random=11039767&referrer=https%3A%2F%2Fcars.com%2Ffor-sale%2Fsearchresults.action%2F';
+    s.onload = function() { setTimeout(function() { iframe_76745486.parentNode.removeChild(iframe_76745486); iframe_76745486.src = 'about:blank'; }, 1500); };
+    ins_76745486.appendChild(s);
+};
+  var Refresh_76745486_Message = function (event) {
+    if (event && event.data && event.data.indexOf && typeof event.data.indexOf === 'function' && event.data === 'Refresh_76745486') { Refresh_76745486(); }
+  };
+  window.addEventListener('message', Refresh_76745486_Message, false);
+  var Refresh_76745486_Timer = setInterval(Refresh_76745486, 1000);
+})();

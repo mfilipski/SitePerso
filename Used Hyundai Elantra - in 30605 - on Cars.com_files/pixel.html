@@ -1,0 +1,38 @@
+
+<!-- saved from url=(0055)https://ai.autoid.com/pixel?domain=https://www.cars.com -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head>
+        <body>
+          <input id="ai_iframe_json" type="hidden" value="%7B%22ai_pixel%22%3A%220c1e42a4e28442ce83ab2dec9c0e13ed%22%7D">
+          <input id="create_cookie" type="hidden" value="false">
+          <script>
+    var value = decodeURIComponent( document.getElementById("ai_iframe_json").value );
+    var ai_pixel_cookie_value = JSON.parse(value).ai_pixel;
+    var create_cookie_value = decodeURIComponent( document.getElementById("create_cookie").value );
+    var aip_ls_value = window.localStorage.getItem('aip');
+    if (aip_ls_value === null ){
+      window.localStorage.setItem('aip', ai_pixel_cookie_value)
+    }
+    else {
+      if (create_cookie_value === 'true') {
+        ai_pixel_cookie_value = aip_ls_value
+
+
+        const url = 'https://ai.autoid.com/update_aip';
+        let data = {
+            'ai_pixel_cookie_value': ai_pixel_cookie_value
+        }
+
+        let fetchData = {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: new Headers()
+        }
+        fetch(url, fetchData);
+      }
+    }
+
+    parent.postMessage(ai_pixel_cookie_value, "https://www.cars.com" );
+  </script>
+        
+      
+    </body></html>

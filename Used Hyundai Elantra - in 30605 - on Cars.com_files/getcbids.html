@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)https://cars.assistpub.com/getcbids.html?_csvr=031812_212 -->
+<html data-adblockkey="MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAMLlOP3Rke738aeqtDCGp0IgSY5XBv7c+brDMmurbYvOFgakGw6sUG8fwt6VkjnOX9s9Kba1Drg2M9Bye/F3x7MCAwEAAQ==_A6Z1qcgBevGHUc70lZRBdCUeNgwuytwcRhGTe74uOjD9Z6fY44O1avRoUVokk853CMqWZ8HGM2wx6M7YgV26KQ=="><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="./aaxcb.js"></script><script>
+        function isDisplayIframe(type) {
+            return type;
+        }
+
+        function isPrefetchIframe(type) {
+            return type === "prefetch_frame";
+        }
+
+        function buildDisplayUrl(srcUrl, type) {
+            srcUrl = srcUrl + "&type=" + type;
+            if (isPrefetchIframe(type)) {
+                srcUrl = "";
+            }
+            return srcUrl;
+        }
+
+        function getScriptUrl(srcUrl) {
+            if (window.name !== '') {
+                try {
+                    var iframeParams = JSON.parse(window.name);
+                    if (isDisplayIframe(iframeParams.type)) {
+                        srcUrl = buildDisplayUrl(srcUrl, iframeParams.type);
+                    }
+                } catch (e) {
+                }
+            }
+            return srcUrl;
+        }
+
+        function loadScript(scriptUrl) {
+            if (scriptUrl === "") {
+                return;
+            }
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = scriptUrl;
+            var placeTag = document.getElementsByTagName("script")[0];
+            placeTag.parentNode.insertBefore(script, placeTag);
+        }
+
+        window.aax = window.aax || {};
+        window.aax["__conf"] = {"referer":"https://www.cars.com/"};
+        scriptUrl = getScriptUrl("https://c.aaxads.com/aaxcb.js?svr=031812_212");
+        loadScript(scriptUrl);
+    </script>
+</head>
+<body marginwidth="0" marginheight="0"><iframe marginwidth="0" marginheight="0" scrolling="no" frameborder="0" height="0" width="0" id="iframe3" src="./async_usersync.html" style="display: none !important;"></iframe><iframe marginwidth="0" marginheight="0" scrolling="no" frameborder="0" height="0" width="0" id="iframe1" src="./ixmatch.html" style="display: none !important;"></iframe>
+
+</body></html>
